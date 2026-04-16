@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #4e73df;
+    --success-color: #1cc88a;
+    --dark-bg: #1a1c23;
+    --dark-card: #242631;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background 0.3s ease;
+}
+
+.sidebar {
+    z-index: 100;
+}
+
+.card {
+    border-radius: 16px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: #eef2ff;
+    color: var(--primary-color) !important;
+    border-radius: 8px;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    background-color: var(--dark-bg) !important;
+    color: #ffffff;
+}
+
+body.dark-mode .card, body.dark-mode .sidebar {
+    background-color: var(--dark-card) !important;
+    color: #ffffff;
+}
+
+body.dark-mode .text-dark {
+    color: #ffffff !important;
+}
+
+body.dark-mode .table {
+    color: #ffffff;
+}
+
+body.dark-mode .table-light {
+    background-color: #313341;
+}
